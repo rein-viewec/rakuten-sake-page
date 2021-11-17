@@ -1,0 +1,96 @@
+@import '_mixins/_mixins'
+$mainColor: #BA0100
+
+.item
+    &__block
+        +flex
+        justify-content: space-between
+        width: 100%
+        max-width: 1200px
+        color: #555555
+        +a
+        a
+            +hov
+            max-width: 50%
+            width: 50%
+    &__box
+        +hov
+        +ib
+        position: relative
+        width: 100%
+        +flex
+        justify-content: space-between
+    &__main
+        +ib
+        max-width: 62%
+        width: 100%
+    &__image
+        img
+            max-width: unset
+            max-height: unset
+            width: 100%
+    &__title
+        text-align: center
+        font-size: 1.7em
+        font-weight: bold
+        overflow: hidden
+        +break(1)
+        height: 30px
+        +b
+    &__price
+        +b
+        text-align: center
+        font-size: 1.4em
+        font-weight: bold
+    &__description
+        +ib
+        z-index: 1
+        background-color: #ffffff55
+        padding: 20px 5px
+        position: relative
+        top: 128px
+        transform: translateX(-50px)
+        width: 38%
+        height: 150px
+        overflow: hidden
+        +break(5)
+        font-size: 1.4em
+
+.footer
+    &__block
+        +flex
+        width: 100%
+        align-items: center
+    &__box
+        +ib
+        width: 100%
+        &.first
+            width: 70%
+        &.second
+            width: 30%
+    &__image
+        text-align: right
+    
+    
+
+@media all and (max-width: 1200px)
+    .item
+        &__box
+        &__main
+            max-width: 100%
+        &__description
+            width: 100%
+            top: 0
+            padding: 20px
+            transform: translateX(0)
+    .about__block
+        .about__logo
+            text-align: center
+            max-width: 100%
+        .about__content
+            max-width: 100%
+
+@media all and (max-width: 720px)
+    .items__block
+        .item__image
+            height: 46vw !important
