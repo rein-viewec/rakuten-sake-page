@@ -55,7 +55,6 @@ $mainColor: #BA0100
         overflow: hidden
         +break(5)
         font-size: 1.4em
-
 .footer
     &__block
         +flex
@@ -75,7 +74,6 @@ $mainColor: #BA0100
 
 @media all and (max-width: 1200px)
     .item
-        &__box
         &__main
             max-width: 100%
         &__description
@@ -90,7 +88,12 @@ $mainColor: #BA0100
         .about__content
             max-width: 100%
 
-@media all and (max-width: 720px)
-    .items__block
-        .item__image
-            height: 46vw !important
+@media all and (max-width: 420px)
+    .item
+        &__block
+            a
+                max-width: 100%
+                width: 100%
+        &__main
+            +ib
+            width: 100%
