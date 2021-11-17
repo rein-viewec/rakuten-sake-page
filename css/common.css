@@ -1429,7 +1429,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .banner__block {
-  background-image: url("/images/banner/top.jpg");
+  background-image: url("../images/banner/top.jpg");
   -o-object-fit: cover;
      object-fit: cover;
   background-size: 100%;
@@ -1470,7 +1470,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .banner__block.banner2 {
-  background-image: url("/images/banner/center.png");
+  background-image: url("../images/banner/center.png");
 }
 
 .main__categories {
