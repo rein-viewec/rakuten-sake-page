@@ -10,16 +10,31 @@ $mainColor: #BA0100
         color: #555555
         +a
         a
-            +hov
+            cursor: pointer
             max-width: 50%
             width: 50%
     &__box
-        +hov
         +ib
-        position: relative
         width: 100%
         +flex
         justify-content: space-between
+        +trs(200ms)
+        position: relative
+    &__hov
+        position: absolute
+        bottom: 0
+        z-index: 1
+        opacity: 0
+        transform: translateY(10px)
+        background-color: #ffffff
+        width: 100%
+        height: 100%
+        +trs(200ms)
+        +flex
+        align-items: center
+        &:hover
+            transform: translateY(0px)
+            opacity: .94
     &__main
         +ib
         max-width: 62%
@@ -37,6 +52,11 @@ $mainColor: #BA0100
         +break(1)
         height: 30px
         +b
+    &__subtitle
+        +b
+        text-align: center
+        font-size: 1.2em
+        font-weight: bold
     &__price
         +b
         text-align: center
@@ -48,12 +68,12 @@ $mainColor: #BA0100
         background-color: #ffffff55
         padding: 20px 5px
         position: relative
-        top: 128px
+        top: 40px
         transform: translateX(-50px)
         width: 38%
-        height: 150px
+        // height: 320px
         overflow: hidden
-        +break(5)
+        // +break(5)
         font-size: 1.4em
 .footer
     &__block
@@ -88,7 +108,7 @@ $mainColor: #BA0100
         .about__content
             max-width: 100%
 
-@media all and (max-width: 420px)
+@media all and (max-width: 720px)
     .item
         &__block
             a
