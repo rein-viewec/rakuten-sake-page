@@ -16,25 +16,11 @@ $mainColor: #BA0100
     &__box
         +ib
         width: 100%
+        margin: 10px 0
         +flex
         justify-content: space-between
         +trs(200ms)
         position: relative
-    &__hov
-        position: absolute
-        bottom: 0
-        z-index: 1
-        opacity: 0
-        transform: translateY(10px)
-        background-color: #ffffff
-        width: 100%
-        height: 100%
-        +trs(200ms)
-        +flex
-        align-items: center
-        &:hover
-            transform: translateY(0px)
-            opacity: .94
     &__main
         +ib
         max-width: 62%
@@ -59,9 +45,11 @@ $mainColor: #BA0100
         font-weight: bold
     &__price
         +b
+        padding: 7px 0 0 0
         text-align: center
         font-size: 1.4em
         font-weight: bold
+        color: #fc6e5b
     &__description
         +ib
         z-index: 1
@@ -69,12 +57,28 @@ $mainColor: #BA0100
         padding: 20px 5px
         position: relative
         top: 40px
+        min-height: 325px
         transform: translateX(-50px)
         width: 38%
         // height: 320px
         overflow: hidden
         // +break(5)
-        font-size: 1.4em
+        font-size: 1.2em
+    &__subdescription
+        position: absolute
+        bottom: 0
+        z-index: 1
+        opacity: 0
+        transform: translateY(10px)
+        background-color: #ffffff
+        width: 100%
+        height: 100%
+        +trs(200ms)
+        +flex
+        align-items: center
+        &:hover
+            transform: translateY(0px)
+            opacity: .94
 .footer
     &__block
         +flex
