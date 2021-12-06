@@ -120,6 +120,22 @@
   color: #fc6e5b;
 }
 
+.item__more {
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 120px;
+  text-align: center;
+  left: 0px;
+  bottom: 0;
+  border-radius: 50px;
+  border: 1px solid #666666;
+  padding: 5px 8px;
+}
+
 .item__description {
   width: 100%;
   max-width: 100%;
@@ -128,7 +144,7 @@
           box-sizing: border-box;
   z-index: 1;
   background-color: #ffffff55;
-  padding: 15px 5px;
+  padding: 15px 5px 50px;
   position: relative;
   top: 40px;
   min-height: 325px;
