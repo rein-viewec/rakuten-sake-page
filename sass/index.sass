@@ -23,7 +23,7 @@ $mainColor: #BA0100
         position: relative
     &__main
         +ib
-        max-width: 62%
+        max-width: 50%
         width: 100%
     &__image
         img
@@ -54,12 +54,12 @@ $mainColor: #BA0100
         +ib
         z-index: 1
         background-color: #ffffff55
-        padding: 20px 5px
+        padding: 15px 5px
         position: relative
         top: 40px
         min-height: 325px
         transform: translateX(-50px)
-        width: 38%
+        width: 50%
         // height: 320px
         overflow: hidden
         // +break(5)
@@ -71,6 +71,10 @@ $mainColor: #BA0100
         opacity: 0
         transform: translateY(10px)
         background-color: #ffffff
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
         width: 100%
         height: 100%
         +trs(200ms)
@@ -91,8 +95,21 @@ $mainColor: #BA0100
             width: 70%
         &.second
             width: 30%
+    &__content
+        font-size: 1.2em
+    &__subcontent
+        margin:  80px 0 0 0
     &__image
+        width: 100%
+        +flex
         text-align: right
+        max-width: 50%
+        img
+            max-width: 50%
+    &__link
+        color: #f18b17
+        font-weight: bold
+        font-size: 1.4rem
     
     
 
@@ -103,7 +120,7 @@ $mainColor: #BA0100
         &__description
             width: 100%
             top: 0
-            padding: 20px
+            padding: 15px 5px
             transform: translateX(0)
     .about__block
         .about__logo
@@ -113,6 +130,13 @@ $mainColor: #BA0100
             max-width: 100%
 
 @media all and (max-width: 720px)
+    .footer
+        &__box
+            width: 100%
+            &.first
+                width: 100%
+            &.second
+                width: 100%
     .item
         &__block
             a
